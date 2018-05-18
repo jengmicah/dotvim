@@ -1,11 +1,26 @@
 
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 call pathogen#helptags()
 
-syntax enable
-colorscheme slate
+syntax on
+colorscheme molokai
 
 set number
+set tabstop=4
+set softtabstop=4
+set showcmd
+set cursorline
+set showmatch
+
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
+
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+nnoremap <space> za
+set foldmethod=indent
 
 if has("autocmd")
 	filetype plugin indent on
