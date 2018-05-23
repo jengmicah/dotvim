@@ -1,6 +1,5 @@
-Clone this repo into ~:
+Clone this repo into ~/.vim:
 	
-	cd ~
 	git clone https://github.com/jengmicah/dotvim.git ~/.vim
 
 Create symlinks:
